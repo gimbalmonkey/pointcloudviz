@@ -65,15 +65,20 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 
 1. Create a Workspace folder to store all files in a single working directory.
 </br>
+
 2. Download Potree Converter into the folder: https://github.com/potree/PotreeConverter
 </br>
+
 3. Move target .las file into the folder.
 </br>
+
 4. Open Command Prompt and navigate to the folder.
 </br>
+
 5. Enter the code below, making the following substitutions:
 <br/>
-`<PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS>`
+
+`PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS`
 <br/>
 *PotreeConverter.exe* = Full file path for the Potree Converter executable
 <br/>
@@ -81,6 +86,7 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 <br/>
 *G:\output* = Full file path for the output location. The program will create a folder with this title to store the ouputs.
 </br>
+
 6. If successful, you will receive this CMD output:
 
 ![](img/CMD_potree_output.JPG)
