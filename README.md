@@ -1,6 +1,8 @@
 # Point Cloud Visualization
 Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spring 2019
 
+![](img/potree_lion.JPG)
+
 ## Objective
 
 * Understanding point cloud geovisualization
@@ -46,10 +48,10 @@ Users may have an area of interest, such as a polygon shapefile, for clipping a 
 Some applications require "absolute" z-values devoid of elevation influence. For instance, to achieve absolute tree height, we subtract the ground elevation from the surface height (Digital Surface Model - Digital Elevation Model). This produces tree height from the ground to the canopy maxima and does not include elevation from sea level. The visualization result is a "flat" point cloud lacking terrain features.
 
 *Pre-Normalization*
-![](img/prenormalization.jpg)
+![](img/prenormalization.JPG)
 
 *Post-Normalization*
-![](img/postnormalization.jpg)
+![](img/postnormalization.JPG)
 
 ## Processing Structure from Motion Data
 
