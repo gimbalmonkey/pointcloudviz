@@ -3,11 +3,24 @@ Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spri
 
 ## Objectives<br/>
 
+* Understanding point cloud geovisualization
+* LiDAR basics
+* Structure from Motion basics
+* UAS sytems
+* Potree and 3DF Zephyr
+
 ## Overview<br/>
+
+LAS datasets and LAS files are an industry standard binary format that allows LiDAR and Structure from Motion (SfM) to be stored quickly and easily. The LAS files contain point clouds, which are large numbers of discrete data points in space. 3-D scanners, LiDAR, and SfM generate point clouds stored in LAS files.
 
 **Lidar**<br/>
 
+Detailed point clouds of forest structure can be captured with active remote sensing sensors such as LiDAR, or with passive remote sensing techniques from a high resolution multispectral camera. Active sensors generate their own energy to record data, and passive sensors gather imagery from passive energy sources such as light reflecting off of objects and sensed in a camera lens. LiDAR data is stored inherently in LAS files as point data, but SfM requires software and overlapping images to create LAS datasets with mathematical models and computer software to generate points in space. When care is taken during data collection, and sufficient preprocessing is done to generate a high quality dataset that can be used for analysis. Visualizing point cloud datasets is a fundamental step to not only understanding the datasets being worked with, but also making sure that there is a potential avenue for point clouds to be used as a visualization tool for education or simply to be used as a visual aid.
+
+
 **Structure from Motion (SfM)**<br/>
+
+
 
 ## Preprocessing<br/>
 
