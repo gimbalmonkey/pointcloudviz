@@ -100,7 +100,7 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 
 ![](img/potree_output_files.JPG)
 
-8. Potree requires a web server to host the point cloud visualization files. We will use GitHub as our web server.
+8. Potree requires a web server to host the point cloud visualization files. We will use GitHub as our web server.<br/>
 
 **GitHub Hosting**<br/>
 
