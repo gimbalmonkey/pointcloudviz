@@ -58,13 +58,13 @@ Some applications require "absolute" z-values devoid of elevation influence. For
 
 **Agisoft Metashape**
 
-Agisoft Metashape is an industry standard visualization software for SfM data. A free trial is available, but full access requires payment.
+Agisoft Metashape is an industry standard visualization software for SfM data. A free trial is available but full access requires payment.
 
 https://www.agisoft.com/
 
 **3DF Zephyr**
 
-3DF Zephyr is an open source SfM visualization software. The free version allows users to take up to 50 photos for 3D model production.
+3DF Zephyr is an open source SfM visualization software. The free version allows users to take up to 50 photos for 3D model production. Photos can be acquired with a good quality cell phone camera.
 
 https://www.3dflow.net/3df-zephyr-pro-3d-models-from-photos/
 
