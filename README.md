@@ -15,6 +15,8 @@ Spring 2019<br/>
 
 **Conversion Code**<br/>
 
+'<PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS>'
+
 **Customizing Potree**<br/>
 
 **GitHub Hosting**<br/>
