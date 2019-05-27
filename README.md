@@ -72,16 +72,20 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 4. Open Command Prompt and navigate to the folder.
 </br>
 5. Enter the code below, making the following substitutions:
-```PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS```<br/>
-*PotreeConverter.exe* = Full file path for the Potree Converter executable<br/>
-*G:\input.las* = Full file path for the input .las file<br/>
-*G:\output* = Full file path for the output location. The program will create a folder with this title to store the ouputs.<br/>
+<br/>
+`<PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS>`
+<br/>
+*PotreeConverter.exe* = Full file path for the Potree Converter executable
+<br/>
+*G:\input.las* = Full file path for the input .las file
+<br/>
+*G:\output* = Full file path for the output location. The program will create a folder with this title to store the ouputs.
 </br>
 6. If successful, you will receive this CMD output:
 
 ![](img/CMD_potree_output.JPG)
 
-7. Check the output folder for files. It should contain a folder for libraries, the point cloud, and an index.html file:
+7. Check the output folder for files. It should contain a folder for libraries, the point cloud, and an index.html file. Rename the index.html file to a name that suits your application:
 
 ![](img/potree_output_files.JPG)
 
@@ -89,12 +93,12 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 
 **GitHub Hosting**<br/>
 
-Create a GitHub repository to host your 3D geovisualization.
+1. Create a GitHub repository to host the 3D geovisualization.
 
-1. Download GitHub Desktop: https://desktop.github.com/
+2. Push the lib and point cloud folders and renamed index.html file to the repository.
+
+3. The visualization will appear at the repository address "/index.html" (or renamed HTML).
 <br/>
-2. Copy and paste the Potree conversion output folder (lib, pointcloud, and index.html files) into the GitHub Desktop contents window.
-</br>
 
 **Customizing Potree**<br/>
 
