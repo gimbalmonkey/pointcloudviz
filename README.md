@@ -7,7 +7,13 @@ Spring 2019<br/>
 
 ## Overview<br/>
 
+**LiDAR**<br/>
+
+**Structure from Motion**<br/>
+
 ## Potree Converter<br/>
 
-## Structure from Motion<br/>
+**GitHub Hosting**<br/>
+
+## 3DF Zephyr <br/>
 
