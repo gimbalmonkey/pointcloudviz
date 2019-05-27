@@ -2,14 +2,15 @@
 Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spring 2019
 
 ![](img/potree_lion.JPG)
+An example of a visualized point cloud from the Potree website.
 
-## Objective
+## Objectives
 
 * Understanding point cloud geovisualization
 * LiDAR basics
 * Structure from Motion basics
-* UAS sytems
-* Potree and 3DF Zephyr
+* Unmanned Aerial Systems overview
+* Potree and 3DF Zephyr data processing
 
 ## Overview of .las files, LiDAR, and Structure from Motion (SfM)
 
@@ -63,7 +64,7 @@ https://www.agisoft.com/
 
 **3DF Zephyr**
 
-3DF Zephyr is an open source SfM visualization software. The free version enables users to take up to 50 photos for 3D model production.
+3DF Zephyr is an open source SfM visualization software. The free version allows users to take up to 50 photos for 3D model production.
 
 https://www.3dflow.net/3df-zephyr-pro-3d-models-from-photos/
 
