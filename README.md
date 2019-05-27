@@ -13,7 +13,9 @@ Spring 2019<br/>
 
 ## Potree Converter<br/>
 
-**Code**
+**Conversion Code**
+
+**Customizing Potree**<br/>
 
 **GitHub Hosting**<br/>
 
