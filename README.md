@@ -1,7 +1,7 @@
 # Point Cloud Visualization
-Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spring 2019<br/>
+Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spring 2019
 
-## Objectives<br/>
+## Objective
 
 * Understanding point cloud geovisualization
 * LiDAR basics
@@ -9,29 +9,25 @@ Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spri
 * UAS sytems
 * Potree and 3DF Zephyr
 
-## Overview<br/>
+## Overview of .las files, LiDAR, and Structure from Motion (SfM)
 
-LAS datasets and LAS files are an industry standard binary format that allows LiDAR and Structure from Motion (SfM) to be stored quickly and easily. The LAS files contain point clouds, which are large numbers of discrete data points in space. 3-D scanners, LiDAR, and SfM generate point clouds stored in LAS files.
+LAS datasets and LAS files are an industry standard binary format that allows LiDAR and Structure from Motion (SfM) data aquisitions to be stored quickly and easily. The LAS files contain point clouds, which are large numbers of discrete data points in space. Each point contains XYZ coordinates with intensity associated RGB color values. 3-D scanners, LiDAR, and SfM generate point clouds stored in LAS files.
 
-**Lidar**<br/>
+Detailed point clouds are captured with active sensors such as LiDAR, or with passive remote sensing techniques from a high resolution multispectral camera (e.g. SfM). Active sensors generate their own energy to record data (e.g. laser pulses), and passive sensors gather imagery from passive energy sources (e.g. light reflecting off of objects and sensed in a camera lens).
 
-Detailed point clouds of forest structure can be captured with active remote sensing sensors such as LiDAR, or with passive remote sensing techniques from a high resolution multispectral camera. Active sensors generate their own energy to record data, and passive sensors gather imagery from passive energy sources such as light reflecting off of objects and sensed in a camera lens. LiDAR data is stored inherently in LAS files as point data, but SfM requires software and overlapping images to create LAS datasets with mathematical models and computer software to generate points in space. When care is taken during data collection, and sufficient preprocessing is done to generate a high quality dataset that can be used for analysis. Visualizing point cloud datasets is a fundamental step to not only understanding the datasets being worked with, but also making sure that there is a potential avenue for point clouds to be used as a visualization tool for education or simply to be used as a visual aid.
+LiDAR data is stored inherently in LAS files as point data, but SfM requires software and overlapping images to create LAS datasets with mathematical models and computer software generating points in space. Careful data collection and sufficient preprocessing generates a high quality dataset for use in analyses. Visualizing point cloud datasets is a fundamental step in understanding the datasets and using point clouds as a tool for education or visual aid.
 
-
-**Structure from Motion (SfM)**<br/>
-
-
-
-## Preprocessing<br/>
+## Preprocessing
 
 Before analyzing or visualizing a point cloud, clean and package the data to minimize error and corruption. Open source point cloud visualization and editing software are available for download:
 
-*CloudCompare*
+*CloudCompare* (All-Around Visualization) https://www.danielgm.net/cc/
 
-*Fusion*
+*Fusion* (Forestry) http://forsys.cfr.washington.edu/fusion/fusionlatest.html
 
-*LAStools*
+*lidR* (R Package for Forestry) https://github.com/Jean-Romain/lidR
 
+*LAStools* (Editing and Analyses) https://rapidlasso.com/lastools/
 
 **LAS Format**
 
@@ -50,31 +46,30 @@ Users may have an area of interest, such as a polygon shapefile, for clipping a 
 Some applications require "absolute" z-values devoid of elevation influence. For instance, to achieve absolute tree height, we subtract the ground elevation from the surface height (Digital Surface Model - Digital Elevation Model). This produces tree height from the ground to the canopy maxima and does not include elevation from sea level. The visualization result is a "flat" point cloud lacking terrain features.
 
 *Pre-Normalization*
-![]()
-</br>
+![](img/prenormalization.jpg)
+
 *Post-Normalization*
-![]()
-</br>
+![](img/postnormalization.jpg)
 
 ## Processing Structure from Motion Data
 
 **Agisoft Metashape**
 
+Agisoft Metashape is an industry standard visualization software for SfM data. A free trial is available, but full access requires payment.
 
-
-Agisoft Metashape
+https://www.agisoft.com/
 
 **3DF Zephyr**
 
+3DF Zephyr is an open source SfM visualization software. The free version enables users to take up to 50 photos for 3D model production.
 
+https://www.3dflow.net/3df-zephyr-pro-3d-models-from-photos/
 
-3DF Zephyr is an open source
-
-## Web Visualization with Potree Converter<br/>
+## Web Visualization with Potree Converter
 
 Potree Converter transforms 3D point clouds into a web-friendly format for online visualization. The input file must be in .las format. The tool creates an HTML file with the associated point cloud and libraries for hosting on a web server. The resulting web page allows 360-degree viewing and zoom functions. The ouput Potree web page includes many tools for manipulating and measuring the target point cloud. Users can customize the page template through the source code.
 
-**Conversion Code**<br/>
+**Conversion Code**
 
 1. Create a Workspace folder to store all files in a single working directory.
 
@@ -101,17 +96,15 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 ![](img/potree_output_files.JPG)
 
 8. Potree requires a web server to host the point cloud visualization files. We will use GitHub as our web server.
-<br/>
 
-**GitHub Hosting**<br/>
+**GitHub Hosting**
 
 1. Create a GitHub repository to host the 3D geovisualization.
 
-2. Push the lib and point cloud folders and renamed index.html file to the repository.
+2. Extract the lib and point cloud folders and renamed index.html file from the output folder and push them to the repository.
 
 3. The visualization will appear at the repository address "/index.html" (or renamed HTML).
-<br/>
 
-**Customizing Potree**<br/>
+**Customizing Potree**
 
-Users can customize the point cloud web page created with Potree Converter by exploring the source code. Users can add, remove, and manipulate default visuzliation and measurement tools.
+Users can customize the point cloud web page created with Potree Converter by exploring the source code. Users can add, remove, and manipulate the default visuzliation and measurement tools provided.
