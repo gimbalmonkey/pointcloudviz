@@ -75,9 +75,9 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 
 `PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS`
 
-*PotreeConverter.exe* = Full file path for the Potree Converter executable
-*G:\input.las* = Full file path for the input .las file
-*G:\output* = Full file path for the output location. The program will create a folder with this title to store the ouputs.
+*PotreeConverter.exe* = Full file path for the Potree Converter executable<br/>
+*G:\input.las* = Full file path for the input .las file<br/>
+*G:\output* = Full file path for the output location. The program will create a folder with this title to store the ouputs.<br/>
 
 6. If successful, you will receive this CMD output:
 
