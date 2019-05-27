@@ -24,13 +24,13 @@ LiDAR data is stored inherently in LAS files as point data, but SfM requires sof
 
 Before analyzing or visualizing a point cloud, clean and package the data to minimize error and corruption. Open source point cloud visualization and editing software are available for download:
 
-*CloudCompare* (All-Around Visualization) https://www.danielgm.net/cc/
+CloudCompare (All-Around Visualization) https://www.danielgm.net/cc/
 
-*Fusion* (Forestry) http://forsys.cfr.washington.edu/fusion/fusionlatest.html
+Fusion (Forestry) http://forsys.cfr.washington.edu/fusion/fusionlatest.html
 
-*lidR* (R Package for Forestry) https://github.com/Jean-Romain/lidR
+lidR (R Package for Forestry) https://github.com/Jean-Romain/lidR
 
-*LAStools* (Editing and Analyses) https://rapidlasso.com/lastools/
+LAStools (Editing and Analyses) https://rapidlasso.com/lastools/
 
 **LAS Format**
 
