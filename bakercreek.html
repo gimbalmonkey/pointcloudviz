@@ -63,7 +63,7 @@
 			viewer.toggleSidebar();
 		});
 		
-		Potree.loadPointCloud("bakercreek/cloud.js", "bakercreek", e => {
+		Potree.loadPointCloud("bakercreek/cloud.js", "index", e => {
 			let pointcloud = e.bakercreek;
 			let material = pointcloud.material;
 			viewer.scene.addPointCloud(pointcloud);
