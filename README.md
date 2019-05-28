@@ -2,7 +2,7 @@
 Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spring 2019
 
 ![](img/potree_lion.JPG)
-Example of a visualized point cloud from the Potree website.
+Visualized point cloud example from the Potree website.
 
 ## Objectives
 
@@ -20,12 +20,18 @@ Detailed point clouds are captured with active sensors such as LiDAR, or with pa
 
 LiDAR data is stored inherently in LAS files as point data, but SfM requires software and overlapping images to create LAS datasets with mathematical models and computer software generating points in space. Careful data collection and sufficient preprocessing generates a high quality dataset for use in analyses. Visualizing point cloud datasets is a fundamental step in understanding the datasets and using point clouds as a tool for education or visual aid.
 
+![](img/LidarNReturns.jpg)
+LiDAR example from Zachary Fancher (2012).  
+
+![](img/SfM.JPG)
+</br> Structure from Motion example from the Cultural Heritage Imaging website.
+
 ## Unmanned Aerial Systems Overview
 
 Unmanned Aerial Systems have emerged as a preferred platform for point cloud data acquisition across disciplines. Users can affix a high resolution camera or LiDAR instrument to a UAS. They can use mission planning software to program an automated flight path with customized parameters like altitude, speed, and camera settings. The user will program a snake-like or gridded flight path capturing one image every few seconds to achieve a high quality point cloud for an area of interest.
 
 ![](img/fig14-overshot_UGCS.png) ![](img/ndvi-ugcs-drone.png)
-</br> Examples of UAS mission planning from the Universal Ground Control Software website.
+</br> UAS mission planning examples from the Universal Ground Control Software website.
 
 Mission planning software is available for download. Some programs integrate flight planning and image processing into a comprehensive package:
 
