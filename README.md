@@ -142,7 +142,6 @@ Below are necessary programs associated with Cesium point cloud visualization:
 [Cesium Point Cloud Generator](https://github.com/tum-gis/cesium-point-cloud-generator)
 [3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles)
 [3D Tiles Styling](https://github.com/AnalyticalGraphicsInc/3d-tiles/tree/master/specification/Styling)
-
 [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) is a JavaScript library integrating WebGL to create 2D and 3D web maps. CesiumJS will ultimately build the interface hosting the point cloud and base maps.
 
 ## Additional Resources
