@@ -23,6 +23,9 @@ LiDAR data is stored inherently in LAS files as point data, but SfM requires sof
 ![](img/LidarNReturns.jpg)
 </br> LiDAR example from Zachary Fancher (2012).  
 
+![](img/structure_from_motion_tracks.png)
+</br> Structure from Motion example from the MathWorks website.
+
 ![](img/SfM.jpg)
 </br> Structure from Motion example from the Cultural Heritage Imaging website.
 
@@ -123,8 +126,8 @@ Users can process SfM data with a variety of software. The process is generally 
 **Examples**
 
 [McDonald-Dunn LiDAR](https://gimbalmonkey.github.io/pointcloud_viz/Viewshed.html)</br>
-[Oak Creek Structure from Motion](https://gimbalmonkey.github.io/pointcloudviz/index.html)</br>
-[Divi Carina Resort](http://research.engr.oregonstate.edu/lidar/pointcloud/divicarina/)</br>
+[Oak Creek SfM](https://gimbalmonkey.github.io/pointcloudviz/index.html)</br>
+[Divi Carina Resort SfM](http://research.engr.oregonstate.edu/lidar/pointcloud/divicarina/)</br>
 
 **Customizing Potree**
 
