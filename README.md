@@ -25,7 +25,7 @@ LiDAR data is stored inherently in LAS files as point data, but SfM requires sof
 Unmanned Aerial Systems have emerged as a preferred platform for point cloud data acquisition across disciplines. Users can affix a high resolution camera or LiDAR instrument to a UAS. They can use mission planning software to program an automated flight path with customized parameters like altitude, speed, and camera settings. The user will program a snake-like or gridded flight path capturing one image every few seconds to achieve a high quality point cloud for an area of interest.
 
 ![](img/fig14-overshot_UGCS.png) ![](img/ndvi-ugcs-drone.png)
-Examples of UAS mission planning from the Universal Ground Control Software website.
+</br> Examples of UAS mission planning from the Universal Ground Control Software website.
 
 Mission planning software is available for download. Some programs integrate flight planning and image processing into a comprehensive package:
 
