@@ -45,7 +45,7 @@ Pix4D https://www.pix4d.com/
 
 ## Preprocessing
 
-Before analyzing or visualizing a point cloud, clean and package the data to minimize error and corruption. Open source point cloud visualization and editing software are available for download:
+Before analyzing or visualizing a point cloud, clean and package the acquired data to minimize error and corruption. Open source point cloud visualization and editing software are available for download:
 
 CloudCompare (All-Around Visualization) https://www.danielgm.net/cc/
 
