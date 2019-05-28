@@ -21,9 +21,9 @@ Detailed point clouds are captured with active sensors such as LiDAR, or with pa
 LiDAR data is stored inherently in LAS files as point data, but SfM requires software and overlapping images to create LAS datasets with mathematical models and computer software generating points in space. Careful data collection and sufficient preprocessing generates a high quality dataset for use in analyses. Visualizing point cloud datasets is a fundamental step in understanding the datasets and using point clouds as a tool for education or visual aid.
 
 ![](img/LidarNReturns.jpg)
-LiDAR example from Zachary Fancher (2012).  
+</br> LiDAR example from Zachary Fancher (2012).  
 
-![](img/SfM.JPG)
+![](img/SfM.jpg)
 </br> Structure from Motion example from the Cultural Heritage Imaging website.
 
 ## Unmanned Aerial Systems Overview
