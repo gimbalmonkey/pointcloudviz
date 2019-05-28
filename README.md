@@ -133,6 +133,12 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 
 3. The visualization will appear at the repository address "/index.html" (or renamed HTML).
 
+**Examples**
+
+https://gimbalmonkey.github.io/pointcloudviz/Viewshed1.html
+https://gimbalmonkey.github.io/pointcloudviz/oatcreek.html
+https://gimbalmonkey.github.io/pointcloudviz/bakercreek.html
+
 **Customizing Potree**
 
 Users can customize the point cloud web page created with Potree Converter by exploring the source code. Users can add, remove, and manipulate the default visuzliation and measurement tools provided.
