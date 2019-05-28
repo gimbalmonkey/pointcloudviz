@@ -2,7 +2,7 @@
 Bryan Begay and Katie Nicolato  **|**  GEOG 572 Geovisual Analytics  **|**  Spring 2019
 
 ![](img/potree_lion.JPG)
-An example of a visualized point cloud from the Potree website.
+Example of a visualized point cloud from the Potree website.
 
 ## Objectives
 
@@ -19,6 +19,23 @@ LAS datasets and LAS files are an industry standard binary format that allows Li
 Detailed point clouds are captured with active sensors such as LiDAR, or with passive remote sensing techniques from a high resolution multispectral camera (e.g. SfM). Active sensors generate their own energy to record data (e.g. laser pulses), and passive sensors gather imagery from passive energy sources (e.g. light reflecting off of objects and sensed in a camera lens).
 
 LiDAR data is stored inherently in LAS files as point data, but SfM requires software and overlapping images to create LAS datasets with mathematical models and computer software generating points in space. Careful data collection and sufficient preprocessing generates a high quality dataset for use in analyses. Visualizing point cloud datasets is a fundamental step in understanding the datasets and using point clouds as a tool for education or visual aid.
+
+## Unmanned Aerial Systems Overview
+
+Unmanned Aerial Systems have emerged as a preferred platform for point cloud data acquisition across disciplines. Users can affix a high resolution camera or LiDAR instrument to a UAS. They can use mission planning software to program an automated flight path with customized parameters like altitude, speed, and camera settings. The user will program a snake-like or gridded flight path capturing one image every few seconds to achieve a high quality point cloud for an area of interest.
+
+![](img/fig14-overshot_UGCS.png) ![](img/ndvi-ugcs-drone.png)
+Examples of UAS mission planning from the Universal Ground Control Software website.
+
+Mission planning software is available for download. Some programs integrate flight planning and image processing into a comprehensive package:
+
+Universal Ground Control Software https://www.ugcs.com/
+
+DroneDeploy https://www.dronedeploy.com/
+
+DroneMapper https://dronemapper.com/
+
+Pix4D https://www.pix4d.com/
 
 ## Preprocessing
 
@@ -42,19 +59,21 @@ Users may acquire point cloud data in separate files. Use a merge command or too
 
 **Clip**
 
-Users may have an area of interest, such as a polygon shapefile, for clipping a .las dataset. After merging, use a clipping command or tool in the suggested software or ArcGIS to clip a .las file to a polygon of interest.
+Users may have an area of interest, such as a polygon shapefile, for clipping a .las dataset. After merging, use a clip command or tool in the suggested software or ArcGIS to clip a .las file to a polygon of interest.
 
 **Normalize**
 
 Some applications require "absolute" z-values devoid of elevation influence. For instance, to achieve absolute tree height, we subtract the ground elevation from the surface height (Digital Surface Model - Digital Elevation Model). This produces tree height from the ground to the canopy maxima and does not include elevation from sea level. The visualization result is a "flat" point cloud lacking terrain features.
 
-*Pre-Normalization*
+Pre-Normalizing a forest stand
 ![](img/prenormalization.JPG)
 
-*Post-Normalization*
+Post-Normalizing a forest stand
 ![](img/postnormalization.JPG)
 
 ## Processing Structure from Motion Data
+
+Users can process SfM data with a variety of software. The process is generally the same on all platforms. The user manually identifies shared georeferenced photo points across the acquired dataset. The software then generates sparse and dense point clouds based on image positions, with options to create triangulated meshes from the point clouds.
 
 **Agisoft Metashape**
 
@@ -84,11 +103,11 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 
 5. Enter the code below, making the following substitutions:
 
-`PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS`
+> `PotreeConverter.exe G:\input.las -o G:\output -p index --overwrite --output-format LAS`
 
-*PotreeConverter.exe* = Full file path for the Potree Converter executable<br/>
-*G:\input.las* = Full file path for the input .las file<br/>
-*G:\output* = Full file path for the output location. The program will create a folder with this title to store the ouputs.<br/>
+> *PotreeConverter.exe* = Full file path for the Potree Converter executable<br/>
+> *G:\input.las* = Full file path for the input .las file<br/>
+> *G:\output* = Full file path for the output location. The program will create a folder with this title to store the ouputs.<br/>
 
 6. If successful, you will receive this CMD output:
 
@@ -111,3 +130,39 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 **Customizing Potree**
 
 Users can customize the point cloud web page created with Potree Converter by exploring the source code. Users can add, remove, and manipulate the default visuzliation and measurement tools provided.
+
+## Web Visualization with Cesium
+
+![](img/cesium_workflow.JPG)
+
+Cesium ion is an alternative platform for point cloud visualization. Cesium ion provides integrated workflows for optimizing, customizing, and hosting geospatial data. Cesium ion allows base map integration for landscape visualization in addition to point clouds.
+
+https://cesium.com/cesium-ion/
+
+https://cesium.com/3d-tiling-pipeline/point-clouds/
+
+Below are necessary programs associated with Cesium point cloud visualization:
+
+Cesium Point Cloud Generator https://github.com/tum-gis/cesium-point-cloud-generator
+
+3D Tiles https://github.com/AnalyticalGraphicsInc/3d-tiles
+
+3D Tiles Styling https://github.com/AnalyticalGraphicsInc/3d-tiles/tree/master/specification/Styling
+
+CesiumJS is a JavaScript library integrating WebGL to create 2D and 3D web maps. CesiumJS will ultimately build the interface hosting the point cloud and base maps.
+
+https://github.com/AnalyticalGraphicsInc/cesium
+
+## Additional Resources
+
+Entwine and PDAL are useful applications for organizing and packaging LAS data for web visualization:
+
+Entwine https://entwine.io/
+
+PDAL https://pdal.io/
+
+Plasio and Greyhound are additional platforms for hosting and visualizing point cloud data:
+
+Plasio https://github.com/verma/plasio
+
+Greyhound https://greyhound.io/index.html
