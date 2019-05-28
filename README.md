@@ -141,7 +141,7 @@ https://gimbalmonkey.github.io/pointcloudviz/bakercreek.html
 
 **Customizing Potree**
 
-Users can customize the point cloud web page created with Potree Converter by exploring the source code. Users can add, remove, and manipulate the default visuzliation and measurement tools provided.
+Users can customize the point cloud web page created with Potree Converter by exploring the source code. Users can add, remove, and manipulate the default visualization and measurement tools provided.
 
 ## Web Visualization with Cesium
 
