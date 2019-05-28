@@ -35,19 +35,19 @@ Unmanned Aerial Systems have emerged as a preferred platform for point cloud dat
 
 Mission planning software is available for download. Some programs integrate flight planning and image processing into a comprehensive package:
 
-[Universal Ground Control Software](https://www.ugcs.com/)
-[DroneDeploy](https://www.dronedeploy.com/)
-[DroneMapper](https://dronemapper.com/)
-[Pix4D](https://www.pix4d.com/)
+[Universal Ground Control Software](https://www.ugcs.com/)</br>
+[DroneDeploy](https://www.dronedeploy.com/)</br>
+[DroneMapper](https://dronemapper.com/)</br>
+[Pix4D](https://www.pix4d.com/)</br>
 
 ## Preprocessing
 
 Before analyzing or visualizing a point cloud, clean and package the acquired data to minimize error and corruption. Open source point cloud visualization and editing software are available for download:
 
-[CloudCompare](https://www.danielgm.net/cc/) (All-around visualization)
-[Fusion](http://forsys.cfr.washington.edu/fusion/fusionlatest.html) (Forestry)
-[lidR](https://github.com/Jean-Romain/lidR) (R Package for Forestry)
-[LAStools](https://rapidlasso.com/lastools/) (Editing and Analyses)
+[CloudCompare](https://www.danielgm.net/cc/) (All-around visualization)</br>
+[Fusion](http://forsys.cfr.washington.edu/fusion/fusionlatest.html) (Forestry)</br>
+[lidR](https://github.com/Jean-Romain/lidR) (R Package for Forestry)</br>
+[LAStools](https://rapidlasso.com/lastools/) (Editing and Analyses)</br>
 
 **LAS Format**
 
@@ -139,9 +139,9 @@ Users can customize the point cloud web page created with Potree Converter by ex
 
 Below are necessary programs associated with Cesium point cloud visualization:
 
-[Cesium Point Cloud Generator](https://github.com/tum-gis/cesium-point-cloud-generator)
-[3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles)
-[3D Tiles Styling](https://github.com/AnalyticalGraphicsInc/3d-tiles/tree/master/specification/Styling)
+[Cesium Point Cloud Generator](https://github.com/tum-gis/cesium-point-cloud-generator)</br>
+[3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles)</br>
+[3D Tiles Styling](https://github.com/AnalyticalGraphicsInc/3d-tiles/tree/master/specification/Styling)</br>
 [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) is a JavaScript library integrating WebGL to create 2D and 3D web maps. CesiumJS will ultimately build the interface hosting the point cloud and base maps.
 
 ## Additional Resources
