@@ -35,25 +35,19 @@ Unmanned Aerial Systems have emerged as a preferred platform for point cloud dat
 
 Mission planning software is available for download. Some programs integrate flight planning and image processing into a comprehensive package:
 
-Universal Ground Control Software https://www.ugcs.com/
-
-DroneDeploy https://www.dronedeploy.com/
-
-DroneMapper https://dronemapper.com/
-
-Pix4D https://www.pix4d.com/
+[Universal Ground Control Software](https://www.ugcs.com/)
+[DroneDeploy](https://www.dronedeploy.com/)
+[DroneMapper](https://dronemapper.com/)
+[Pix4D](https://www.pix4d.com/)
 
 ## Preprocessing
 
 Before analyzing or visualizing a point cloud, clean and package the acquired data to minimize error and corruption. Open source point cloud visualization and editing software are available for download:
 
-CloudCompare (All-Around Visualization) https://www.danielgm.net/cc/
-
-Fusion (Forestry) http://forsys.cfr.washington.edu/fusion/fusionlatest.html
-
-lidR (R Package for Forestry) https://github.com/Jean-Romain/lidR
-
-LAStools (Editing and Analyses) https://rapidlasso.com/lastools/
+[CloudCompare](https://www.danielgm.net/cc/) (All-around visualization)
+[Fusion](http://forsys.cfr.washington.edu/fusion/fusionlatest.html) (Forestry)
+[lidR](https://github.com/Jean-Romain/lidR) (R Package for Forestry)
+[LAStools](https://rapidlasso.com/lastools/) (Editing and Analyses)
 
 **LAS Format**
 
@@ -81,27 +75,19 @@ Post-Normalizing a forest stand
 
 Users can process SfM data with a variety of software. The process is generally the same on all platforms. The user manually identifies shared georeferenced photo points across the acquired dataset. The software then generates sparse and dense point clouds based on image positions, with options to create triangulated meshes from the point clouds.
 
-**Agisoft Metashape**
+[Agisoft Metashape](https://www.agisoft.com/) is an industry standard visualization software for SfM data. A free trial is available but full access requires payment.
 
-Agisoft Metashape is an industry standard visualization software for SfM data. A free trial is available but full access requires payment.
-
-https://www.agisoft.com/
-
-**3DF Zephyr**
-
-3DF Zephyr is an open source SfM visualization software. The free version allows users to take up to 50 photos for 3D model production. Photos can be acquired with a good quality cell phone camera.
-
-https://www.3dflow.net/3df-zephyr-pro-3d-models-from-photos/
+[3DF Zephyr](https://www.3dflow.net/3df-zephyr-pro-3d-models-from-photos/) is an open source SfM visualization software. The free version allows users to take up to 50 photos for 3D model production. Photos can be acquired with a good quality cell phone camera.
 
 ## Web Visualization with Potree Converter
 
-Potree Converter transforms 3D point clouds into a web-friendly format for online visualization. The input file must be in .las format. The tool creates an HTML file with the associated point cloud and libraries for hosting on a web server. The resulting web page allows 360-degree viewing and zoom functions. The ouput Potree web page includes many tools for manipulating and measuring the target point cloud. Users can customize the page template through the source code.
+[Potree Converter](https://github.com/potree/PotreeConverter) transforms 3D point clouds into a web-friendly format for online visualization. The input file must be in .las format. The tool creates an HTML file with the associated point cloud and libraries for hosting on a web server. The resulting web page allows 360-degree viewing and zoom functions. The ouput Potree web page includes many tools for manipulating and measuring the target point cloud. Users can customize the page template through the source code.
 
 **Conversion Code**
 
 1. Create a Workspace folder to store all files in a single working directory.
 
-2. Download Potree Converter into the folder: https://github.com/potree/PotreeConverter
+2. Download Potree Converter into the folder.
 
 3. Move target .las file into the folder.
 
@@ -147,34 +133,20 @@ Users can customize the point cloud web page created with Potree Converter by ex
 
 ![](img/cesium_workflow.JPG)
 
-Cesium ion is an alternative platform for point cloud visualization. Cesium ion provides integrated workflows for optimizing, customizing, and hosting geospatial data. Cesium ion allows base map integration for landscape visualization in addition to point clouds.
+[Cesium ion](https://cesium.com/cesium-ion/) is an alternative platform for point cloud visualization. Cesium ion provides integrated workflows for optimizing, customizing, and hosting geospatial data. Cesium ion allows base map integration for landscape visualization in addition to point clouds.
 
-https://cesium.com/cesium-ion/
-
-https://cesium.com/3d-tiling-pipeline/point-clouds/
+[Cesium Point Cloud Workflow](https://cesium.com/3d-tiling-pipeline/point-clouds/)
 
 Below are necessary programs associated with Cesium point cloud visualization:
 
-Cesium Point Cloud Generator https://github.com/tum-gis/cesium-point-cloud-generator
+[Cesium Point Cloud Generator](https://github.com/tum-gis/cesium-point-cloud-generator)
+[3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles)
+[3D Tiles Styling](https://github.com/AnalyticalGraphicsInc/3d-tiles/tree/master/specification/Styling)
 
-3D Tiles https://github.com/AnalyticalGraphicsInc/3d-tiles
-
-3D Tiles Styling https://github.com/AnalyticalGraphicsInc/3d-tiles/tree/master/specification/Styling
-
-CesiumJS is a JavaScript library integrating WebGL to create 2D and 3D web maps. CesiumJS will ultimately build the interface hosting the point cloud and base maps.
-
-https://github.com/AnalyticalGraphicsInc/cesium
+[CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) is a JavaScript library integrating WebGL to create 2D and 3D web maps. CesiumJS will ultimately build the interface hosting the point cloud and base maps.
 
 ## Additional Resources
 
-Entwine and PDAL are useful applications for organizing and packaging LAS data for web visualization:
+[Entwine](https://entwine.io/) and [PDAL](https://pdal.io/) are useful applications for organizing and packaging LAS data for web visualization.
 
-Entwine https://entwine.io/
-
-PDAL https://pdal.io/
-
-Plasio and Greyhound are additional platforms for hosting and visualizing point cloud data:
-
-Plasio https://github.com/verma/plasio
-
-Greyhound https://greyhound.io/index.html
+[Plasio](https://github.com/verma/plasio) and [Greyhound](https://greyhound.io/index.html) are additional platforms for hosting and visualizing point cloud data.
