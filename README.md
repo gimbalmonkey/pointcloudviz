@@ -129,7 +129,7 @@ Potree Converter transforms 3D point clouds into a web-friendly format for onlin
 
 1. Create a GitHub repository to host the 3D geovisualization.
 
-2. Extract the lib and point cloud folders and renamed index.html file from the output folder and push them to the repository.
+2. Extract the lib and point cloud folders and renamed index.html file from the output folder and push them to the repository with Atom or GitHub Desktop.
 
 3. The visualization will appear at the repository address "/index.html" (or renamed HTML).
 
