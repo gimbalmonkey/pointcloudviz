@@ -63,8 +63,8 @@
 			viewer.toggleSidebar();
 		});
 		
-		Potree.loadPointCloud("Viewshed1/index/cloud.js", "index", e => {
-			let pointcloud = e.Viewshed1;
+		Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
+			let pointcloud = e.pointclouds;
 			let material = pointcloud.material;
 			viewer.scene.addPointCloud(pointcloud);
 			material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
