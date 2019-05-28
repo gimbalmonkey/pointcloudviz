@@ -63,8 +63,8 @@
 			viewer.toggleSidebar();
 		});
 		
-		Potree.loadPointCloud("oatcreek/index/cloud.js", "index", e => {
-			let pointcloud = e.oatcreek;
+		Potree.loadPointCloud("oakcreek/index/cloud.js", "index", e => {
+			let pointcloud = e.oakcreek;
 			let material = pointcloud.material;
 			viewer.scene.addPointCloud(pointcloud);
 			material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
