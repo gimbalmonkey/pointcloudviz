@@ -121,8 +121,7 @@ Users can process SfM data with a variety of software. The process is generally 
 
 **Examples**
 
-[McDonald-Dunn LiDAR](https://gimbalmonkey.github.io/pointcloudviz/Viewshed1.html)</br>
-[Baker Creek LiDAR](https://gimbalmonkey.github.io/pointcloudviz/bakercreek.html)</br>
+[McDonald-Dunn LiDAR](https://gimbalmonkey.github.io/pointcloud_viz/Viewshed.html)</br>
 [Oak Creek Structure from Motion](https://gimbalmonkey.github.io/pointcloudviz/oatcreek.html)</br>
 
 **Customizing Potree**
